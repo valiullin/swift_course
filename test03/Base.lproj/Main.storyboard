@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRh-jt-ZdV">
@@ -184,7 +184,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIs-zv-xdj">
-                                <frame key="frameInset" minX="11" minY="163" width="64" height="64"/>
+                                <frame key="frameInset" minX="11" minY="234" width="64" height="64"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="∗"/>
@@ -205,7 +205,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6H-HD-gCY">
-                                <frame key="frameInset" minX="11" minY="235" width="64" height="64"/>
+                                <frame key="frameInset" minX="11" minY="306" width="64" height="64"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="N9n-FC-AgQ"/>
@@ -214,6 +214,16 @@
                                 <state key="normal" title="!"/>
                                 <connections>
                                     <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1k-UZ-aJC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3W-GQ-62C">
+                                <frame key="frameInset" minX="11" minY="163" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="e"/>
+                                <connections>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TzS-eT-CSu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,7 +241,7 @@
                             <constraint firstItem="jCm-xn-0dl" firstAttribute="top" secondItem="pX8-BD-q87" secondAttribute="top" id="8Cb-Nh-3K5"/>
                             <constraint firstItem="h7F-ab-P4B" firstAttribute="leading" secondItem="HWc-2L-y4X" secondAttribute="leading" id="9Nq-ny-RVp"/>
                             <constraint firstItem="8ro-gq-XsA" firstAttribute="leading" secondItem="gOz-Ce-DcI" secondAttribute="trailing" constant="8" symbolic="YES" id="ADZ-mI-Rkz"/>
-                            <constraint firstItem="XRh-jt-ZdV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Akx-jW-f9o"/>
+                            <constraint firstItem="XRh-jt-ZdV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Akx-jW-f9o"/>
                             <constraint firstItem="K1C-Vu-LkZ" firstAttribute="leading" secondItem="4ET-aV-3eh" secondAttribute="trailing" constant="8" symbolic="YES" id="Ang-PN-Aia"/>
                             <constraint firstItem="jCm-xn-0dl" firstAttribute="leading" secondItem="gOz-Ce-DcI" secondAttribute="leading" id="B8U-Oj-3SY"/>
                             <constraint firstItem="0Ce-TE-Gm8" firstAttribute="baseline" secondItem="Ur3-uE-oMY" secondAttribute="baseline" id="CqV-LS-JP7"/>

@@ -22,14 +22,14 @@ class Calculator {
     }
 
     private var pendingOperation: PendingBinaryOperation? = nil
-    
+
     static func factorial(number: Double) -> Double {
         if (number <= 1) {
             return 1
         }
         return number * factorial(number: number - 1)
     }
-    
+
     private var accumulator = 0.0
     
     
@@ -37,6 +37,7 @@ class Calculator {
         "√": OperationType.unary(sqrt),
         "∗": OperationType.unary({ $0*$0 }),
         "π": OperationType.unary({_ in return M_PI }),
+        "e": OperationType.unary({_ in return M_E }),
         "!": OperationType.unary({ Calculator.factorial(number: $0) }),
         "+": OperationType.binary({ $0 + $1 }),
         "-": OperationType.binary({ $0 - $1 }),
